@@ -18,6 +18,7 @@
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "react-hot-toast": "^2.6.1",
+    "react-marquee-text": "^1.0.6",
     "tailwind-variants": "^3.3.1"
   },
   "devDependencies": {
