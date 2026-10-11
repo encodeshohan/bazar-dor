@@ -4,10 +4,10 @@ export const toBengaliNumber = (value: number) =>
     value.toLocaleString("bn-BD", { maximumFractionDigits: 2 });
 
 const units: Record<string, string> = {
-    kg: "/কেজি",
-    litre: "/লিটার",
-    dozen: "/ডজন",
-    piece: "/পিস",
+    kg: "প্রতি কেজি",
+    litre: "প্রতি লিটার",
+    dozen: "প্রতি ডজন",
+    piece: "প্রতি পিস",
 };
 
 export const formatUnit = (unit: string) => units[unit] ?? `প্রতি ${unit}`;

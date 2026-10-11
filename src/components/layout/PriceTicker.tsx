@@ -16,7 +16,7 @@ const PriceTicker = async () => {
     return (
         <div className="border-b border-gray-200 bg-white">
             <div className="mx-auto max-w-7xl">
-                <MarqueeText className="py-2 text-sm" direction="right" duration={8}>
+                <MarqueeText className="py-1 text-sm" direction="right" duration={10}>
                     {products.map((p) => (
                         <Link
                             key={p.slug}

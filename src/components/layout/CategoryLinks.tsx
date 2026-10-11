@@ -20,7 +20,7 @@ const CategoryLinks = ({ categories }: { categories: Category[] }) => {
         }`;
 
     return (
-        <nav className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 pb-3 [scrollbar-width:none] lg:justify-center">
+        <nav className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 pb-3 [scrollbar-width:none]">
             <Link href="/" className={linkClass(pathname === "/")}>
                 হোম
             </Link>
