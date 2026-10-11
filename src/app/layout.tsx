@@ -18,11 +18,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="bn"
-      data-theme="light"
-      className={`${hindSiliguri.className} h-full antialiased`}
-    >
+    <html lang="bn" className={`${hindSiliguri.className} h-full antialiased scroll-smooth`}>
       <body className="min-h-full bg-[#f4f6f8]">
         <Header />
         <Suspense

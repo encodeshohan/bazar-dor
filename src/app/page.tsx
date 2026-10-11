@@ -1,10 +1,9 @@
-import { Button } from "@heroui/react";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold text-green-700">বাজার দর</h1>
-      <Button>বাটন</Button>
+      <Hero />
     </div>
   );
 }
