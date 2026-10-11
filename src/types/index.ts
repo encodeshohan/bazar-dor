@@ -26,3 +26,5 @@ export interface Product {
     change: PriceChange;
     markets: Market[];
 }
+
+export type SortOption = "default" | "price-asc" | "price-desc";
