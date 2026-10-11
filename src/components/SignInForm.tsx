@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import toast from "react-hot-toast";
@@ -22,6 +22,14 @@ const SignInForm = () => {
     const callbackUrl = getSafeCallbackUrl(searchParams.get("callbackUrl"));
     const [isLoading, setIsLoading] = useState(false);
 
+    useEffect(() => {
+        if (searchParams.get("callbackUrl")) {
+            toast.error("বিস্তারিত দেখতে অনুগ্রহ করে আগে সাইন ইন করুন।", {
+                id: "auth-required",
+            });
+        }
+    }, [searchParams]);
+
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
@@ -42,6 +50,8 @@ const SignInForm = () => {
         router.push(callbackUrl);
         router.refresh();
     };
+
+
 
     return (
         <div className="mx-4 mt-10 sm:mx-auto sm:w-full sm:max-w-md">
