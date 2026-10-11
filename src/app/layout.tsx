@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
 import PriceTicker from "@/components/PriceTicker";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const hindSiliguri = Hind_Siliguri({
   subsets: ["latin", "bengali"],
@@ -19,14 +20,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="bn" className={`${hindSiliguri.className} h-full antialiased scroll-smooth`}>
-      <body className="min-h-full bg-[#f4f6f8]">
+      <body className="flex min-h-full flex-col bg-[#f4f6f8]">
         <Header />
         <Suspense
           fallback={<div className="h-9 animate-pulse border-b border-gray-200 bg-gray-100" />}
         >
           <PriceTicker />
         </Suspense>
-        <main className="max-w-7xl mx-auto">{children}</main>
+        <main className="mx-auto w-full max-w-7xl flex-1">{children}</main>
+        <Footer />
         <Toaster />
       </body>
     </html>
