@@ -33,3 +33,8 @@ export const sortProducts = (products: Product[], option: SortOption) => {
         option === "price-asc" ? price(a) - price(b) : price(b) - price(a),
     );
 };
+
+
+// Only allow same-site paths, so a crafted link can't redirect users elsewhere
+export const getSafeCallbackUrl = (url: string | null) =>
+    url && url.startsWith("/") && !url.startsWith("//") ? url : "/";
