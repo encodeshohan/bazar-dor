@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import CategoryProducts from "@/components/CategoryProducts";
-import ProductSkeleton from "@/components/ProductSkeleton";
+import CategoryProducts from "@/components/product/CategoryProducts";
+import ProductSkeleton from "@/components/product/ProductSkeleton";
 import { Product } from "@/types";
 
 const API = "https://openapi.programming-hero.com/api/bazardor";

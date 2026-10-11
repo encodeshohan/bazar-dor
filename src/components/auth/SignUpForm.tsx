@@ -13,7 +13,7 @@ import {
     TextField,
 } from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
-import SocialButtons from "./SocialButtons";
+import SocialButtons from "../SocialButtons";
 
 const SignUpForm = () => {
     const router = useRouter();

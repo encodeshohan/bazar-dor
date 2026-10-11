@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
+import Header from "@/components/layout/Header";
 import { Hind_Siliguri } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
-import PriceTicker from "@/components/PriceTicker";
+import PriceTicker from "@/components/layout/PriceTicker";
 import "./globals.css";
-import Footer from "@/components/Footer";
+import Footer from "@/components/layout/Footer";
 
 const hindSiliguri = Hind_Siliguri({
   subsets: ["latin", "bengali"],

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import HeaderDate from "./HeaderDate";
 import NavLinks from "./NavLinks";
-import UserInfo from "./UserInfo";
+import UserInfo from "../auth/UserInfo";
 
 const NavSkeleton = () => (
     <div className="mx-auto flex max-w-7xl gap-2 overflow-hidden px-4 pb-3 lg:justify-center">

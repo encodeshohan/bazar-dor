@@ -1,7 +1,7 @@
 import { Suspense } from "react";
-import Hero from "@/components/Hero";
-import HomeProducts from "@/components/HomeProducts";
-import ProductSkeleton from "@/components/ProductSkeleton";
+import Hero from "@/components/home/Hero";
+import HomeProducts from "@/components/home/HomeProducts";
+import ProductSkeleton from "@/components/product/ProductSkeleton";
 
 export default function Home() {
   return (

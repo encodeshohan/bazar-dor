@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeaderDate from "./HeaderDate";
+import HeaderDate from "../layout/HeaderDate";
 import { Suspense } from "react";
 
 const Hero = () => {

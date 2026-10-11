@@ -1,4 +1,4 @@
-import ProductCard from "./ProductCard";
+import ProductCard from "../product/ProductCard";
 import { Product } from "@/types";
 
 const HomeProducts = async () => {
