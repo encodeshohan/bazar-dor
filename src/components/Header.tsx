@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import HeaderDate from "./HeaderDate";
 import NavLinks from "./NavLinks";
+import UserInfo from "./UserInfo";
 
 const NavSkeleton = () => (
     <div className="mx-auto flex max-w-7xl gap-2 overflow-hidden px-4 pb-3 lg:justify-center">
@@ -26,20 +27,7 @@ const Header = () => {
                     </Suspense>
                 </Link>
 
-                <div className="flex items-center gap-2 text-sm">
-                    <Link
-                        href="/signin"
-                        className="rounded-lg px-3 py-2 font-medium text-gray-700 transition-colors hover:text-green-700"
-                    >
-                        সাইন ইন
-                    </Link>
-                    <Link
-                        href="/signup"
-                        className="rounded-lg bg-green-700 px-3 py-2 font-semibold text-white transition-colors hover:bg-green-800"
-                    >
-                        সাইন আপ
-                    </Link>
-                </div>
+                <UserInfo />
             </div>
 
             <Suspense fallback={<NavSkeleton />}>
